@@ -1,3 +1,3 @@
 module.exports = {
-  pathPrefix: "/reponame",
+  pathPrefix: "/tellus-private",
 }
