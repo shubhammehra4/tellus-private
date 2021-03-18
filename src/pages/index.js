@@ -23,6 +23,7 @@ const IndexPage = () => {
     password.current.type =
       password.current.type === "text" ? "password" : "text"
     setVisible(prevState => !prevState)
+    password.current.focus()
   }
 
   return (
