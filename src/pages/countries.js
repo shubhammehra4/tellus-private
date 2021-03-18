@@ -17,7 +17,7 @@ const Countries = () => {
       <SEO title="Countries" />
       <section className="w-screen min-h-screen flex flex-col lg:flex-row items-center justify-evenly mx-auto">
         <Link to="/India">
-          <div className="country grid w-4/5 max-w-sm m-6">
+          <div className="country grid max-w-sm m-10 md:m-6">
             <StaticImage
               src="../images/india-main.jpg"
               alt="India"
@@ -40,7 +40,7 @@ const Countries = () => {
           </div>
         </Link>
         <Link to="/South-East-Asia">
-          <div className="country grid w-4/5 max-w-sm m-6">
+          <div className="country grid w-4/5 max-w-sm m-10 md:m-6">
             <StaticImage
               src="../images/south-east-asia-main.jpg"
               alt="India"
@@ -62,7 +62,7 @@ const Countries = () => {
           </div>
         </Link>
         <Link to="/China">
-          <div className="country grid w-4/5 max-w-sm m-6">
+          <div className="country grid w-4/5 max-w-sm m-10 md:m-6">
             <StaticImage
               src="../images/china-main.jpg"
               alt="India"
