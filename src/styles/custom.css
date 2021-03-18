@@ -1,0 +1,50 @@
+.c-name {
+  font-family: "Palanquin", sans-serif;
+  letter-spacing: 4rem;
+  margin-right: -4rem;
+}
+.c-status {
+  font-family: "Palanquin", sans-serif;
+  letter-spacing: 3rem;
+  margin-right: -3rem;
+}
+
+input#password:focus-within ~ label,
+input#password:not(:placeholder-shown) ~ label {
+  @apply hidden;
+}
+
+.country {
+  height: 28rem;
+}
+.country-image {
+  grid-area: 1/1;
+  filter: blur(1px) grayscale(1);
+  transition: all 450ms ease-out;
+}
+
+.country:hover .country-image {
+  filter: blur(0) grayscale(0);
+  transform: scale(1.02);
+}
+
+.country-name {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.text-shadow {
+  text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 760px) {
+  .c-name {
+    letter-spacing: 2rem;
+    margin-right: -2rem;
+  }
+  .c-status {
+    letter-spacing: 2rem;
+    margin-right: -2rem;
+  }
+}

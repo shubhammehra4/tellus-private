@@ -1,7 +1,8 @@
 import React, { useContext, useEffect } from "react"
-import { navigate } from "gatsby"
+import { Link, navigate } from "gatsby"
 import { Context } from "../context/Context"
 import SEO from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Countries = () => {
   const { auth } = useContext(Context)
@@ -15,36 +16,74 @@ const Countries = () => {
     <>
       <SEO title="Countries" />
       <section className="w-screen min-h-screen flex flex-col lg:flex-row items-center justify-evenly mx-auto">
-        <div className="place relative w-4/5 max-w-sm m-6">
-          <img
-            className="object-cover object-center h-full w-full"
-            src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80"
-            alt="India"
-          />
-          <span className="place-name absolute text-center w-full text-white">
-            INDIA
-          </span>
-        </div>
-        <div className="place relative w-4/5 max-w-sm m-6">
-          <img
-            className="object-cover object-center h-full w-full"
-            src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80"
-            alt="India"
-          />
-          <span className="place-name absolute text-center w-full text-white">
-            INDIA
-          </span>
-        </div>
-        <div className="place relative w-4/5 max-w-sm m-6">
-          <img
-            className="object-cover object-center h-full w-full"
-            src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80"
-            alt="India"
-          />
-          <span className="place-name absolute text-center w-full text-white">
-            INDIA
-          </span>
-        </div>
+        <Link to="/India">
+          <div className="country grid w-4/5 max-w-sm m-6">
+            <StaticImage
+              src="../images/india-main.jpg"
+              alt="India"
+              placeholder="blurred"
+              className="country-image h-full w-full"
+              formats={["auto", "webp", "avif"]}
+              width={500}
+              height={500}
+            />
+            <div
+              className="relative place-items-center grid"
+              style={{
+                gridArea: "1/1",
+              }}
+            >
+              <h1 className="country-name text-white text-4xl tracking-widest">
+                INDIA
+              </h1>
+            </div>
+          </div>
+        </Link>
+        <Link to="/South-East-Asia">
+          <div className="country grid w-4/5 max-w-sm m-6">
+            <StaticImage
+              src="../images/south-east-asia-main.jpg"
+              alt="India"
+              placeholder="blurred"
+              className="country-image h-full w-full"
+              formats={["auto", "webp", "avif"]}
+              height={500}
+            />
+            <div
+              className="relative place-items-center grid"
+              style={{
+                gridArea: "1/1",
+              }}
+            >
+              <h1 className="country-name text-white text-center text-4xl tracking-wider text-shadow">
+                SOUTH <span className="text-red-800">EAST ASIA</span>
+              </h1>
+            </div>
+          </div>
+        </Link>
+        <Link to="/China">
+          <div className="country grid w-4/5 max-w-sm m-6">
+            <StaticImage
+              src="../images/china-main.jpg"
+              alt="India"
+              placeholder="blurred"
+              className="country-image h-full w-full"
+              formats={["auto", "webp", "avif"]}
+              width={500}
+              height={500}
+            />
+            <div
+              className="relative place-items-center grid"
+              style={{
+                gridArea: "1/1",
+              }}
+            >
+              <h1 className="country-name text-4xl tracking-widest text-red-600">
+                CHINA
+              </h1>
+            </div>
+          </div>
+        </Link>
       </section>
     </>
   )

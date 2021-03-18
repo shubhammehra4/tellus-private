@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { ContextProvider } from "../context/Context"
 import { motion } from "framer-motion"
 import "../styles/global.css"
+import "../styles/custom.css"
 
 const Layout = ({ children }) => {
   return (

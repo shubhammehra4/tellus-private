@@ -11,10 +11,10 @@ const IndexPage = () => {
 
   const { validateAuth } = useContext(Context)
 
-  const handlePassword = e => {
+  const handlePassword = async e => {
     e.preventDefault()
     if (password.current.value === "password") {
-      validateAuth(password.current.value)
+      await validateAuth(password.current.value)
       navigate(`/countries`)
     }
   }

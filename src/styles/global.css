@@ -1,43 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;700&display=swap");
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
-}
-.c-name {
-  font-family: "Palanquin", sans-serif;
-  letter-spacing: 4rem;
-  margin-right: -4rem;
-}
-.c-status {
-  font-family: "Palanquin", sans-serif;
-  letter-spacing: 3rem;
-  margin-right: -3rem;
-}
-
-input#password:focus-within ~ label,
-input#password:not(:placeholder-shown) ~ label {
-  @apply hidden;
-}
-
-@tailwind utilities;
-
-.place {
-  height: 28rem;
-}
-.place-name {
-  top: 11rem;
-  font-size: 4rem;
-}
-
-@media (max-width: 760px) {
-  .c-name {
-    letter-spacing: 2rem;
-    margin-right: -2rem;
-  }
-  .c-status {
-    letter-spacing: 2rem;
-    margin-right: -2rem;
-  }
 }
