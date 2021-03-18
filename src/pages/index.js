@@ -13,7 +13,7 @@ const IndexPage = () => {
 
   const handlePassword = async e => {
     e.preventDefault()
-    if (password.current.value === "password") {
+    if (password.current.value === "karndesigner") {
       await validateAuth(password.current.value)
       navigate(`/countries`)
     }

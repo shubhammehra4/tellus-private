@@ -7,7 +7,7 @@ export function ContextProvider({ children }) {
   const [auth, setAuth] = useState(false)
 
   const validateAuth = password => {
-    if (password === "password") {
+    if (password === "karndesigner") {
       setAuth(true)
     }
   }
