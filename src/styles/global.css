@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;700&display=swap");
 @tailwind base;
 @tailwind components;
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -21,9 +21,15 @@ input#password:not(:placeholder-shown) ~ label {
   @apply hidden;
 }
 
-/* input#password:focus-within ~ label {
-  @apply text-blue-500;
-} */
+@tailwind utilities;
+
+.place {
+  height: 28rem;
+}
+.place-name {
+  top: 11rem;
+  font-size: 4rem;
+}
 
 @media (max-width: 760px) {
   .c-name {
@@ -35,5 +41,3 @@ input#password:not(:placeholder-shown) ~ label {
     margin-right: -2rem;
   }
 }
-
-@tailwind utilities;
