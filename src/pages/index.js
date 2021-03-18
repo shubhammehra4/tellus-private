@@ -3,7 +3,7 @@ import { navigate } from "gatsby"
 import { Context } from "../context/Context"
 
 import SEO from "../components/seo"
-import { StaticImage } from "gatsby-plugin-image"
+import { BsEyeFill, BsEyeSlashFill } from "react-icons/bs"
 
 const IndexPage = () => {
   const password = useRef()
@@ -54,28 +54,16 @@ const IndexPage = () => {
             >
               PASSWORD
             </label>
-            <span
-              className="absolute top-0 right-1 z-10 cursor-pointer"
+            <button
+              className="absolute top-0 right-1 z-10 cursor-pointer focus:outline-none focus:scale-105"
               onClick={togglePassword}
             >
               {visible ? (
-                <StaticImage
-                  placeholder="tracedSVG"
-                  width={25}
-                  height={20}
-                  src="../images/eye-solid.svg"
-                  alt="hide"
-                />
+                <BsEyeFill className="fill-current text-gray-400" />
               ) : (
-                <StaticImage
-                  placeholder="none"
-                  width={25}
-                  height={20}
-                  src="../images/eye-slash-solid.svg"
-                  alt="see"
-                />
+                <BsEyeSlashFill className="fill-current text-gray-400" />
               )}
-            </span>
+            </button>
           </div>
         </form>
         <footer className="absolute bottom-2 text-sm md:text-base text-center px-3">
