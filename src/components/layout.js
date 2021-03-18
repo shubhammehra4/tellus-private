@@ -9,9 +9,9 @@ const Layout = ({ children }) => {
   return (
     <ContextProvider>
       <motion.main
-        initial={{ opacity: 0, x: -200 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: 200 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
         transition={{
           type: "spring",
           mass: 0.35,
