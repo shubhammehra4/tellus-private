@@ -7,6 +7,7 @@ import { BsEyeFill, BsEyeSlashFill } from "react-icons/bs"
 
 const IndexPage = () => {
   const password = useRef()
+  const success = useRef()
   const [visible, setVisible] = useState(false)
 
   const { validateAuth } = useContext(Context)
@@ -14,8 +15,13 @@ const IndexPage = () => {
   const handlePassword = async e => {
     e.preventDefault()
     if (password.current.value === "karndesigner") {
+      success.current.style.borderColor = "green"
       await validateAuth(password.current.value)
       navigate(`/countries`)
+    } else if (password.current.value.length > 12) {
+      success.current.style.borderColor = "red"
+    } else {
+      success.current.style.borderColor = "rgba(30,64,175,1)"
     }
   }
   const togglePassword = e => {
@@ -38,7 +44,10 @@ const IndexPage = () => {
           PRIVATE
         </p>
         <form autoComplete="off" className="w-3/5 sm:w-2/5 lg:w-2/6 md:w-2/6">
-          <div className="relative my-10 md:my-20 border-b-2 border-gray-300 focus-within:border-blue-800">
+          <div
+            ref={success}
+            className="relative my-10 md:my-20 border-b-2 border-gray-300 focus-within:border-blue-800"
+          >
             <input
               id="password"
               type="password"
