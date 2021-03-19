@@ -1,17 +1,14 @@
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
-function SEA3() {
+function SEA3({ src }) {
   return (
     <section className="w-screen h-screen flex flex-col">
       <div className="grid w-screen h-2/3 md:h-3/4">
-        <StaticImage
-          src="../../images/south-east-asia-3.jpg"
+        <GatsbyImage
+          image={src}
           alt="SOUTH EAST ASIA"
-          placeholder="blurred"
-          formats={["auto", "webp", "avif"]}
           className="static-image w-full h-full"
-          height={1000}
         />
         <div
           className="w-screen mt-auto h-1/6 relative place-items-end grid sea-backdrop-3"

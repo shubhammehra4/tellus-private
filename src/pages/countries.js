@@ -1,16 +1,16 @@
-import React, { useContext, useEffect } from "react"
-import { Link, navigate } from "gatsby"
-import { Context } from "../context/Context"
+import React from "react"
+import { Link } from "gatsby"
+// import { Context } from "../context/Context"
 import SEO from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Countries = () => {
-  const { auth } = useContext(Context)
-  useEffect(() => {
-    if (!auth) {
-      navigate(`/`)
-    }
-  }, [auth])
+  // const { auth } = useContext(Context)
+  // useEffect(() => {
+  //   if (!auth) {
+  //     navigate(`/`)
+  //   }
+  // }, [auth])
 
   return (
     <>
@@ -24,8 +24,8 @@ const Countries = () => {
               placeholder="blurred"
               className="country-image h-full w-full"
               formats={["auto", "webp", "avif"]}
-              width={500}
-              height={500}
+              width={450}
+              height={450}
             />
             <div
               className="relative place-items-center grid"
@@ -47,7 +47,8 @@ const Countries = () => {
               placeholder="blurred"
               className="country-image h-full w-full"
               formats={["auto", "webp", "avif"]}
-              height={500}
+              width={450}
+              height={450}
             />
             <div
               className="relative place-items-center grid"
@@ -69,8 +70,8 @@ const Countries = () => {
               placeholder="blurred"
               className="country-image h-full w-full"
               formats={["auto", "webp", "avif"]}
-              width={500}
-              height={500}
+              width={450}
+              height={450}
             />
             <div
               className="relative place-items-center grid"
