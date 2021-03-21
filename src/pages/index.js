@@ -38,15 +38,18 @@ const IndexPage = () => {
       <section className="flex flex-col justify-center items-center w-screen h-screen">
         <h1 className="c-name text-xl md:text-5xl font-bold">TELLUS</h1>
         <p
-          className="c-status text-3xl md:text-8xl font-extralight"
+          className="c-status text-2xl sm:text-3xl md:text-8xl font-extralight"
           style={{ color: "rgba(0, 0, 0, 0.3)" }}
         >
           PRIVATE
         </p>
-        <form autoComplete="off" className="w-3/5 sm:w-2/5 lg:w-2/6 md:w-2/6">
+        <form
+          autoComplete="off"
+          className="w-3/5 sm:w-2/5 lg:w-2/6 xl:w-1/4 md:w-2/5"
+        >
           <div
             ref={success}
-            className="relative my-10 md:my-20 border-b-2 border-gray-300 focus-within:border-blue-800"
+            className="relative my-10 md:my-20 border-b-2 border-gray-300 focus-within:border-blue-700"
           >
             <input
               id="password"
@@ -60,18 +63,20 @@ const IndexPage = () => {
             <label
               htmlFor="password"
               className="text-center w-full absolute top-0 -z-1"
-              style={{ color: "rgba(0, 0, 0, 0.3)" }}
+              style={{ color: "rgba(0, 0, 0, 0.4)" }}
             >
               PASSWORD
             </label>
             <button
-              className="absolute top-0 right-1 z-10 cursor-pointer focus:outline-none focus:scale-105"
+              className="absolute top-0 right-1 z-10 text-gray-400 hover:text-gray-700 focus:outline-none focus:text-gray-900"
               onClick={togglePassword}
+              title="toogle password"
+              label="toggle password"
             >
               {visible ? (
-                <BsEyeFill className="fill-current text-gray-400" />
+                <BsEyeFill label="visible" className="fill-current" />
               ) : (
-                <BsEyeSlashFill className="fill-current text-gray-400" />
+                <BsEyeSlashFill label="hidden" className="fill-current" />
               )}
             </button>
           </div>
@@ -82,11 +87,17 @@ const IndexPage = () => {
             353 avenue de la Basilique, 1081 Brussels – Belgium
           </address>{" "}
           |{" "}
-          <a className="text-blue-400" href="mailto:info@tellus.be">
+          <a
+            className="text-blue-600 hover:underline"
+            href="mailto:info@tellus.be"
+          >
             info@tellus.be
           </a>{" "}
           |{" "}
-          <a className="text-blue-400" href="tel:32 2 414 64 03">
+          <a
+            className="text-blue-600 hover:underline"
+            href="tel:32 2 414 64 03"
+          >
             +32 2 414 64 03
           </a>
         </footer>
