@@ -36,7 +36,7 @@ function SouthEastAsia({ data }) {
   )
 }
 export const pageQuery = graphql`
-  query SecondQuery {
+  query SEAImageQuery {
     sea1: file(relativePath: { eq: "south-east-asia-1.jpg" }) {
       childImageSharp {
         gatsbyImageData(
