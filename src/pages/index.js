@@ -88,14 +88,14 @@ const IndexPage = () => {
           </address>{" "}
           |{" "}
           <a
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 hover:underline focus:underline"
             href="mailto:info@tellus.be"
           >
             info@tellus.be
           </a>{" "}
           |{" "}
           <a
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 hover:underline focus:underline"
             href="tel:32 2 414 64 03"
           >
             +32 2 414 64 03
