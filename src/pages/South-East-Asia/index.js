@@ -20,11 +20,10 @@ function SouthEastAsia({ data }) {
         stopOnHover={false}
         dynamicHeight={false}
         autoPlay={true}
-        interval={10000}
-        transitionTime={800}
-        infiniteLoop={true}
-        swipeScrollTolerance={10}
-        useKeyboardArrows={true}
+        interval={8000}
+        transitionTime={600}
+        // infiniteLoop={true}
+        swipeScrollTolerance={80}
       >
         <SEA1 src={getImage(data.sea1)} />
         <SEA2 src={getImage(data.sea2)} />

@@ -2,8 +2,8 @@ module.exports = {
   pathPrefix: "/tellus-private",
   siteMetadata: {
     title: `TELLUS`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `TELLUS PRIVATE TOURISMS`,
+    author: `@shubhammehra4, @karnsharma`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,8 +26,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `TELLUS PRIVATE`,
+        short_name: `TELLUS`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

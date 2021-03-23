@@ -1,5 +1,6 @@
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 function SEA5({ src }) {
   return (
@@ -40,6 +41,9 @@ function SEA5({ src }) {
           another, throwing up ever more mesmerising combinations. This is a
           region where umble hawker stalls come with Michelin stars.
         </p>
+        <Link className="mt-2" to="/South-East-Asia/Places">
+          <button className="px-2 py-2 bg-white rounded-lg">I'm in</button>
+        </Link>
       </div>
     </section>
   )
