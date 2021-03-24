@@ -11,6 +11,14 @@ import SEA4 from "../../components/SEA/SEA4"
 import SEA5 from "../../components/SEA/SEA5"
 
 function SouthEastAsia({ data }) {
+  const indicatorStyles = {
+    background: "#828282",
+    width: 18,
+    height: 6,
+    display: "inline-block",
+    margin: "0 8px",
+  }
+
   return (
     <>
       <SEO title="SOUTH EAST ASIA" />
@@ -24,6 +32,39 @@ function SouthEastAsia({ data }) {
         transitionTime={600}
         // infiniteLoop={true}
         swipeScrollTolerance={80}
+        renderIndicator={(onClickHandler, isSelected, index, label) => {
+          if (isSelected) {
+            if (index == 4) {
+              const indicators = document.querySelector(".control-dots")
+              indicators.style.display = "none"
+            }
+            if (index == 3) {
+              const indicators = document.querySelector(".control-dots")
+              indicators.style.display = "block"
+            }
+            return (
+              <li
+                style={{ ...indicatorStyles, background: "#fff" }}
+                aria-label={`Slide - ${label} ${index + 1}`}
+                title={`${label} ${index + 1}`}
+              />
+            )
+          }
+          return (
+            <li
+              className="focus:outline-none"
+              style={indicatorStyles}
+              onClick={onClickHandler}
+              onKeyDown={onClickHandler}
+              value={index}
+              key={index}
+              role="button"
+              tabIndex={0}
+              title={`${label} ${index + 1}`}
+              aria-label={`Slide - ${label} ${index + 1}`}
+            />
+          )
+        }}
       >
         <SEA1 src={getImage(data.sea1)} />
         <SEA2 src={getImage(data.sea2)} />
