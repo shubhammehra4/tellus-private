@@ -18,8 +18,8 @@ export default function Places({ data }) {
   return (
     <>
       <SEO title="Places" />
-      <section className="w-screen min-h-screen flex flex-col justify-evenly items-center">
-        <AnimateSharedLayout type="crossfade">
+      <AnimateSharedLayout type="crossfade">
+        <section className="w-screen min-h-screen flex flex-col justify-evenly items-center">
           <h1
             className="palanquin-bold text-center text-4xl xs:text-5xl md:text-6xl text-gray-300 my-10 xl:my-0 px-1"
             style={{ letterSpacing: "0.3em" }}
@@ -32,6 +32,7 @@ export default function Places({ data }) {
                 key={i}
                 layoutId={item.title}
                 name={item.title}
+                isSlected={selected === item.title}
                 imageSrc={getImage(item.image)}
                 current={selected}
                 select={setSelected}
@@ -77,6 +78,7 @@ export default function Places({ data }) {
           <AnimatePresence>
             {selected && (
               <PlaceItem
+                key="item"
                 name={selected}
                 layoutId={selected}
                 imageSrc={getImage(data[selected.toLowerCase()])}
@@ -84,8 +86,8 @@ export default function Places({ data }) {
               />
             )}
           </AnimatePresence>
-        </AnimateSharedLayout>
-      </section>
+        </section>
+      </AnimateSharedLayout>
     </>
   )
 }
