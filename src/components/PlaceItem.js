@@ -5,6 +5,8 @@ import { GatsbyImage } from "gatsby-plugin-image"
 export default function PlaceItem({ name, imageSrc, layoutId, select }) {
   return (
     <motion.div
+      exit={{ opacity: 0, transition: { duration: 0.03 } }}
+      style={{ pointerEvents: "auto" }}
       className="fixed z-10 top-0 h-full w-full overlay"
       onClick={() => {
         select(null)
