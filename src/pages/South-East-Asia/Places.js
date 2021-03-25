@@ -18,7 +18,7 @@ function PlaceBox({ name, imageSrc }) {
             gridArea: "1/1",
           }}
         >
-          <h1 className="country-name text-white text-4xl tracking-widest">
+          <h1 className="country-name palanquin-bold text-white text-4xl tracking-widest">
             {name}
           </h1>
         </div>
@@ -32,7 +32,10 @@ export default function Places({ data }) {
     <>
       <SEO title="Places" />
       <section className="w-screen min-h-screen flex flex-col justify-evenly items-center">
-        <h1 className="text-center text-7xl tracking-widest text-gray-300 my-10 xl:my-0">
+        <h1
+          className="palanquin-bold text-center text-5xl md:text-6xl text-gray-300 my-10 xl:my-0"
+          style={{ letterSpacing: "0.3em" }}
+        >
           SOUTH EAST ASIA
         </h1>
         <div className="w-full flex flex-col xl:flex-row items-center justify-evenly">
