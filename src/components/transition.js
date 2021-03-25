@@ -3,7 +3,7 @@ import {
   TransitionGroup,
   Transition as ReactTransition,
 } from "react-transition-group"
-const timeout = 700
+const timeout = 600
 const getTransitionStyles = {
   entering: {
     position: `absolute`,
