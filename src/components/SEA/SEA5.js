@@ -40,7 +40,10 @@ function SEA5({ src }) {
           region where umble hawker stalls come with Michelin stars.
         </p>
         <Link className="mt-6" to="/South-East-Asia/Places">
-          <button className="px-10 py-3 bg-white font-bold tracking-widest hover:bg-black hover:text-white transition duration-300 ease-in-out">
+          <button
+            id="go"
+            className="px-10 py-3 bg-white font-bold tracking-widest hover:bg-black hover:text-white transition duration-300 ease-in-out opacity-0"
+          >
             GO
           </button>
         </Link>

@@ -36,7 +36,11 @@ function SouthEastAsia({ data }) {
           if (isSelected) {
             if (index === 4) {
               const indicators = document.querySelector(".control-dots")
+              const button = document.querySelector("#go")
               indicators.style.display = "none"
+              setTimeout(() => {
+                button.style.opacity = 1
+              }, 1000)
             }
             if (index === 3) {
               const indicators = document.querySelector(".control-dots")
