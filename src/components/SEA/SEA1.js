@@ -22,11 +22,9 @@ export default function SEA1({ src }) {
         style={{ backgroundColor: "#7AB1C4" }}
       >
         <h1
-          className="text-2xl md:text-5xl mb-2 md:mb-4 tracking-widest"
+          className="palanquin-bold text-2xl md:text-5xl mb-2 md:mb-4 tracking-widest"
           style={{
             color: "#613636",
-            fontFamily: "'Palanquin', sans-serif",
-            fontWeight: "700",
           }}
         >
           SOUTH EAST ASIA

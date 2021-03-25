@@ -12,11 +12,11 @@ const IndexPage = () => {
 
   const { validateAuth } = useContext(Context)
 
-  const handlePassword = async e => {
+  const handlePassword = e => {
     e.preventDefault()
     if (password.current.value === "karndesigner") {
       success.current.style.borderColor = "green"
-      await validateAuth(password.current.value)
+      validateAuth(password.current.value)
       navigate(`/countries`)
     } else if (password.current.value.length > 12) {
       success.current.style.borderColor = "red"
@@ -36,9 +36,9 @@ const IndexPage = () => {
     <>
       <SEO title="Home" />
       <section className="flex flex-col justify-center items-center w-screen h-screen">
-        <h1 className="c-name text-xl md:text-5xl font-bold">TELLUS</h1>
+        <h1 className="palanquin-bold c-name text-xl md:text-6xl">TELLUS</h1>
         <p
-          className="c-status text-2xl sm:text-3xl md:text-8xl font-extralight"
+          className="palanquin-light c-status text-2xl sm:text-3xl md:text-8xl"
           style={{ color: "rgba(0, 0, 0, 0.3)" }}
         >
           PRIVATE

@@ -1,12 +1,20 @@
-.c-name {
+.palanquin-bold {
   font-family: "Palanquin", sans-serif;
-  letter-spacing: 4rem;
-  margin-right: -4rem;
+  font-weight: 700;
+}
+
+.palanquin-light {
+  font-family: "Palanquin", sans-serif;
+  font-weight: 100;
+}
+
+.c-name {
+  letter-spacing: 4.2rem;
+  margin-right: -4.2rem;
 }
 .c-status {
-  font-family: "Palanquin", sans-serif;
-  letter-spacing: 3rem;
-  margin-right: -3rem;
+  letter-spacing: 3.5rem;
+  margin-right: -3.5rem;
 }
 
 input#password:focus-within ~ label,
@@ -33,8 +41,6 @@ input#password:not(:placeholder-shown) ~ label {
 }
 
 .country-name {
-  font-family: "Palanquin", sans-serif;
-  font-weight: 700;
   text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.2);
 }
 

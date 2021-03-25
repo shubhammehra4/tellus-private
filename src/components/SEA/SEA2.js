@@ -22,11 +22,9 @@ function SEA2({ src }) {
         style={{ backgroundColor: "#33809C" }}
       >
         <h1
-          className="text-2xl md:text-5xl mb-2 md:mb-4 tracking-widest"
+          className="palanquin-bold text-2xl md:text-5xl mb-2 md:mb-4 tracking-widest"
           style={{
             color: "#B0D168",
-            fontFamily: "'Palanquin', sans-serif",
-            fontWeight: "700",
           }}
         >
           ELEMENTAL FORCES

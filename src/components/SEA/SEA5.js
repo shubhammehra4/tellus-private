@@ -23,11 +23,9 @@ function SEA5({ src }) {
         style={{ backgroundColor: "#181A0E" }}
       >
         <h1
-          className="text-2xl md:text-5xl mb-1 md:mb-4 tracking-widest"
+          className="palanquin-bold text-2xl md:text-5xl mb-1 md:mb-4 tracking-widest"
           style={{
             color: "#B0D168",
-            fontFamily: "'Palanquin', sans-serif",
-            fontWeight: "700",
           }}
         >
           EPICUREAN ENCOUNTERS

@@ -22,11 +22,9 @@ function SEA4({ src }) {
         style={{ backgroundColor: "#0C111C" }}
       >
         <h1
-          className="text-2xl md:text-5xl mb-1 md:mb-4 tracking-widest"
+          className="palanquin-bold text-2xl md:text-5xl mb-1 md:mb-4 tracking-widest"
           style={{
             color: "#FFEB61",
-            fontFamily: "'Palanquin', sans-serif",
-            fontWeight: "700",
           }}
         >
           URBAN ADVENTURES

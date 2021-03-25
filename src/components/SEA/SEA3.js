@@ -22,11 +22,9 @@ function SEA3({ src }) {
         style={{ backgroundColor: "#D9D4CB" }}
       >
         <h1
-          className="text-2xl md:text-5xl mb-1 md:mb-4 tracking-widest"
+          className="palanquin-bold text-2xl md:text-5xl mb-1 md:mb-4 tracking-widest"
           style={{
             color: "#4B4A48",
-            fontFamily: "'Palanquin', sans-serif",
-            fontWeight: "700",
           }}
         >
           SPIRITUAL SPACES

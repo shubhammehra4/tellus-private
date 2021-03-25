@@ -34,11 +34,11 @@ function SouthEastAsia({ data }) {
         swipeScrollTolerance={80}
         renderIndicator={(onClickHandler, isSelected, index, label) => {
           if (isSelected) {
-            if (index == 4) {
+            if (index === 4) {
               const indicators = document.querySelector(".control-dots")
               indicators.style.display = "none"
             }
-            if (index == 3) {
+            if (index === 3) {
               const indicators = document.querySelector(".control-dots")
               indicators.style.display = "block"
             }
@@ -58,8 +58,8 @@ function SouthEastAsia({ data }) {
               onKeyDown={onClickHandler}
               value={index}
               key={index}
-              role="button"
               tabIndex={0}
+              role="button"
               title={`${label} ${index + 1}`}
               aria-label={`Slide - ${label} ${index + 1}`}
             />
