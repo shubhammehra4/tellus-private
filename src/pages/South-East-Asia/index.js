@@ -4,11 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel"
 import { graphql } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
-import SEA1 from "../../components/SEA/SEA1"
-import SEA2 from "../../components/SEA/SEA2"
-import SEA3 from "../../components/SEA/SEA3"
-import SEA4 from "../../components/SEA/SEA4"
-import SEA5 from "../../components/SEA/SEA5"
+import { slides } from "../../components/SEA/slides"
+import Slide from "../../components/Slide"
 
 function SouthEastAsia({ data }) {
   const indicatorStyles = {
@@ -30,7 +27,6 @@ function SouthEastAsia({ data }) {
         autoPlay={true}
         interval={8000}
         transitionTime={600}
-        // infiniteLoop={true}
         swipeScrollTolerance={80}
         renderIndicator={(onClickHandler, isSelected, index, label) => {
           if (isSelected) {
@@ -70,18 +66,26 @@ function SouthEastAsia({ data }) {
           )
         }}
       >
-        <SEA1 src={getImage(data.sea1)} />
-        <SEA2 src={getImage(data.sea2)} />
-        <SEA3 src={getImage(data.sea3)} />
-        <SEA4 src={getImage(data.sea4)} />
-        <SEA5 src={getImage(data.sea5)} />
+        {slides.map((s, i) => (
+          <Slide
+            key={s.id}
+            title={s.title}
+            titleColor={s.titleColor}
+            description={s.description}
+            descriptionColor={s.descriptionColor}
+            position={s.position}
+            backgroundColor={s.backgroundColor}
+            src={getImage(data[s.uid])}
+            last={i === 4}
+          />
+        ))}
       </Carousel>
     </>
   )
 }
 export const pageQuery = graphql`
   query SEAImageQuery {
-    sea1: file(relativePath: { eq: "south-east-asia-1.jpg" }) {
+    SEA1: file(relativePath: { eq: "south-east-asia-1.jpg" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
@@ -90,7 +94,7 @@ export const pageQuery = graphql`
         )
       }
     }
-    sea2: file(relativePath: { eq: "south-east-asia-2.jpg" }) {
+    SEA2: file(relativePath: { eq: "south-east-asia-2.jpg" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
@@ -99,7 +103,7 @@ export const pageQuery = graphql`
         )
       }
     }
-    sea3: file(relativePath: { eq: "south-east-asia-3.jpg" }) {
+    SEA3: file(relativePath: { eq: "south-east-asia-3.jpg" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
@@ -109,7 +113,7 @@ export const pageQuery = graphql`
         )
       }
     }
-    sea4: file(relativePath: { eq: "south-east-asia-4.jpg" }) {
+    SEA4: file(relativePath: { eq: "south-east-asia-4.jpg" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
@@ -118,7 +122,7 @@ export const pageQuery = graphql`
         )
       }
     }
-    sea5: file(relativePath: { eq: "south-east-asia-5.jpg" }) {
+    SEA5: file(relativePath: { eq: "south-east-asia-5.jpg" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED

@@ -59,102 +59,11 @@ input#password:not(:placeholder-shown) ~ label {
   }
 }
 
-.sea-backdrop-1 {
-  background: rgb(122, 177, 196);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(122, 177, 196, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(122, 177, 196, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(122, 177, 196, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7ab1c4",endColorstr="#8a0000",GradientType=1);
+.push picture {
+  object-position: bottom;
 }
-
-.sea-backdrop-2 {
-  background: rgb(51, 128, 156);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(51, 128, 156, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(51, 128, 156, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(51, 128, 156, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33809c",endColorstr="#8a0000",GradientType=1);
-}
-
-.sea-backdrop-3 {
-  background: rgb(217, 212, 203);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(217, 212, 203, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(217, 212, 203, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(217, 212, 203, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d9d4cb",endColorstr="#8a0000",GradientType=1);
-}
-
-.sea-backdrop-4 {
-  background: rgb(12, 17, 28);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(12, 17, 28, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(12, 17, 28, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(12, 17, 28, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0c111c",endColorstr="#8a0000",GradientType=1);
-}
-
-.sea-backdrop-5 {
-  background: rgb(24, 26, 14);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(24, 26, 14, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(24, 26, 14, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(24, 26, 14, 1) 0%,
-    rgba(138, 0, 0, 0) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#181a0e",endColorstr="#8a0000",GradientType=1);
+@media (max-width: 764px) {
+  .push picture {
+    object-position: right;
+  }
 }

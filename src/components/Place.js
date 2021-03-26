@@ -40,6 +40,10 @@ export default function PlaceList({
         >
           {name}
         </motion.h1>
+        <motion.div
+          layoutId={`${layoutId}-desc`}
+          className="relative grid"
+        ></motion.div>
       </motion.div>
     </motion.li>
   )
