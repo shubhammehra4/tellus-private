@@ -1,6 +1,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { GatsbyImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 export default function PlaceItem({
   name,
@@ -23,7 +24,7 @@ export default function PlaceItem({
     >
       <motion.div
         layoutId={`${layoutId}-card`}
-        className="grid h-1/2 max-w-5xl w-11/12 mx-auto pt-4"
+        className="grid h-1/2 max-w-3xl w-11/12 mx-auto pt-4"
       >
         <GatsbyImage
           image={imageSrc}
@@ -57,11 +58,17 @@ export default function PlaceItem({
 
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { delay: 0.05 } }}
+        animate={{ opacity: 1, transition: { delay: 0.1 } }}
         style={{ backgroundColor: bg, color }}
-        className="flex justify-center items-center max-w-5xl w-11/12 pb-4 md:pb-0 md:h-1/4 mx-auto px-2 md:px-4 text-center text-sm md:text-xl"
+        className="flex flex-col justify-center items-center max-w-3xl w-11/12 pb-4 md:pb-0 md:h-2/5 mx-auto px-2 md:px-4 text-center text-sm md:text-xl"
       >
-        {description}
+        <p>{description}</p>
+        <Link
+          to="/"
+          className="mt-3 py-2 px-4 bg-gray-800 text-white hover:bg-white hover:text-gray-800 transition-all duration-300 ease-in "
+        >
+          I'M IN
+        </Link>
       </motion.div>
     </motion.div>
   )
