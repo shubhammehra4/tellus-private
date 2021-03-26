@@ -43,7 +43,7 @@ function SouthEastAsia({ data }) {
               indicators.style.display = "block"
             }
             return (
-              <li
+              <button
                 style={{ ...indicatorStyles, background: "#fff" }}
                 aria-label={`Slide - ${label} ${index + 1}`}
                 title={`${label} ${index + 1}`}
@@ -51,7 +51,7 @@ function SouthEastAsia({ data }) {
             )
           }
           return (
-            <li
+            <button
               className="focus:outline-none"
               style={indicatorStyles}
               onClick={onClickHandler}
@@ -59,7 +59,6 @@ function SouthEastAsia({ data }) {
               value={index}
               key={index}
               tabIndex={0}
-              role="button"
               title={`${label} ${index + 1}`}
               aria-label={`Slide - ${label} ${index + 1}`}
             />
