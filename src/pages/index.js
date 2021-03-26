@@ -17,6 +17,7 @@ const IndexPage = () => {
     if (password.current.value === "karndesigner") {
       success.current.style.borderColor = "green"
       validateAuth(password.current.value)
+      console.log(process.env.PASSWORD)
       navigate(`/countries`)
     } else if (password.current.value.length > 12) {
       success.current.style.borderColor = "red"
