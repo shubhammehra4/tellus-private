@@ -158,8 +158,3 @@ input#password:not(:placeholder-shown) ~ label {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#181a0e",endColorstr="#8a0000",GradientType=1);
 }
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.3);
-  transition: all 300ms ease-in-out;
-}
