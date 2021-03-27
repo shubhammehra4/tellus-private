@@ -64,7 +64,7 @@ input#password:not(:placeholder-shown) ~ label {
 }
 
 .push picture {
-  object-position: bottom;
+  object-position: 50% 95%;
 }
 @media (max-width: 764px) {
   .push picture {
