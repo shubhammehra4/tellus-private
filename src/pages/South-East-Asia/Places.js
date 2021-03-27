@@ -60,7 +60,7 @@ export const pageQuery = graphql`
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
-          width: 700
+          width: 768
           formats: [AUTO, WEBP, AVIF]
         )
       }
@@ -69,7 +69,7 @@ export const pageQuery = graphql`
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
-          width: 700
+          width: 768
           formats: [AUTO, WEBP, AVIF]
         )
       }
@@ -78,7 +78,7 @@ export const pageQuery = graphql`
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
-          width: 700
+          width: 768
           formats: [AUTO, WEBP, AVIF]
         )
       }
@@ -87,7 +87,7 @@ export const pageQuery = graphql`
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
-          width: 700
+          width: 768
           formats: [AUTO, WEBP, AVIF]
         )
       }
@@ -96,7 +96,7 @@ export const pageQuery = graphql`
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
-          width: 700
+          width: 768
           formats: [AUTO, WEBP, AVIF]
         )
       }

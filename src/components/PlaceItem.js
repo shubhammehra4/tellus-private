@@ -39,7 +39,7 @@ export default function PlaceItem({
         >
           <motion.h1
             layoutId={`${layoutId}-title`}
-            className="country-name palanquin-bold text-white text-4xl md:text-5xl lg:text-7xl opacity-50 tracking-widest"
+            className="country-name palanquin-bold text-white text-4xl md:text-7xl lg:text-8xl opacity-50 tracking-widest"
           >
             {name}
           </motion.h1>
@@ -60,7 +60,7 @@ export default function PlaceItem({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 0.1 } }}
         layoutId={`${layoutId}-desc`}
-        style={{ backgroundColor: bg, color }}
+        style={{ backgroundColor: bg, color, fontFamily: "'Lato', sans-serif" }}
         className="flex flex-col justify-center items-center max-w-3xl w-11/12 pb-4 md:pb-0 md:h-2/5 mx-auto px-2 md:px-4 text-center text-sm md:text-xl"
       >
         <p>{description}</p>
