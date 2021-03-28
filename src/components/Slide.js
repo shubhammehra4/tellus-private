@@ -2,7 +2,7 @@ import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
-export default function SEA1({
+export default function SLIDE({
   title,
   titleColor,
   description,
@@ -11,6 +11,7 @@ export default function SEA1({
   backgroundColor,
   src,
   last,
+  link,
 }) {
   return (
     <section className="w-screen h-screen flex flex-col">
@@ -53,7 +54,7 @@ export default function SEA1({
           {description}
         </p>
         {last && (
-          <Link className="mt-5" to="/South-East-Asia/Places">
+          <Link className="mt-5" to={link}>
             <button
               id="go"
               className="px-10 py-3 bg-white font-bold tracking-widest hover:bg-black hover:text-white transition duration-300 ease-in-out opacity-0"

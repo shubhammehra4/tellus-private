@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
-export default function PlaceItem({
+export default function PlaceBig({
   name,
   imageSrc,
   layoutId,
@@ -11,6 +11,7 @@ export default function PlaceItem({
   description,
   color,
   bg,
+  link,
 }) {
   return (
     <motion.div
@@ -65,7 +66,7 @@ export default function PlaceItem({
       >
         <p>{description}</p>
         <Link
-          to="/"
+          to={link}
           className="mt-3 py-2 px-4 bg-gray-800 text-white hover:bg-white hover:text-gray-800 transition-all duration-300 ease-in "
         >
           I'M IN

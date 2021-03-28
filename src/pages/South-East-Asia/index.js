@@ -10,15 +10,15 @@ import Slide from "../../components/Slide"
 function SouthEastAsia({ data }) {
   const indicatorStyles = {
     background: "#828282",
-    width: 18,
-    height: 6,
+    width: 35,
+    height: 5,
     display: "inline-block",
     margin: "0 8px",
   }
 
   return (
     <>
-      <SEO title="SOUTH EAST ASIA" />
+      <SEO title="SOUTH EAST ASIA" description={slides[0].description} />
       <Carousel
         showThumbs={false}
         showStatus={false}
@@ -27,7 +27,7 @@ function SouthEastAsia({ data }) {
         autoPlay={true}
         interval={8000}
         transitionTime={600}
-        swipeScrollTolerance={80}
+        swipeScrollTolerance={50}
         renderIndicator={(onClickHandler, isSelected, index, label) => {
           if (isSelected) {
             if (index === 4) {
@@ -76,6 +76,7 @@ function SouthEastAsia({ data }) {
             backgroundColor={s.backgroundColor}
             src={getImage(data[s.uid])}
             last={i === 4}
+            link={`/south-east-asia/places/`}
           />
         ))}
       </Carousel>

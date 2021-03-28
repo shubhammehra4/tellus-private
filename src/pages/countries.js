@@ -20,7 +20,7 @@ const Countries = () => {
           <span className="text-gray-800">TELL US</span> YOUR DESTINATION
         </h1>
         <div className="w-full flex flex-col lg:flex-row items-center justify-evenly">
-          <Link className="country-link" to="/India">
+          <Link className="country-link" to="/indian-subcontinent/">
             <div className="country grid max-w-sm m-10 md:m-6">
               <StaticImage
                 src="../images/india-main.jpg"
@@ -43,7 +43,7 @@ const Countries = () => {
               </div>
             </div>
           </Link>
-          <Link className="country-link" to="/South-East-Asia">
+          <Link className="country-link" to="/south-east-asia/">
             <div className="country grid w-4/5 max-w-sm m-10 md:m-6">
               <StaticImage
                 src="../images/south-east-asia-main.jpg"
@@ -66,7 +66,7 @@ const Countries = () => {
               </div>
             </div>
           </Link>
-          <Link className="country-link" to="/China">
+          <Link className="country-link" to="/china/">
             <div className="country grid w-4/5 max-w-sm m-10 md:m-6">
               <StaticImage
                 src="../images/china-main.jpg"

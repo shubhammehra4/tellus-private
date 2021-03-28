@@ -4,8 +4,8 @@ import { graphql } from "gatsby"
 import { getImage } from "gatsby-plugin-image"
 import { AnimateSharedLayout, AnimatePresence, motion } from "framer-motion"
 import Place from "../../components/Place"
-import PlaceItem from "../../components/PlaceItem"
-import { items } from "../../components/SEA/items"
+import PlaceBig from "../../components/PlaceBig"
+import { items } from "../../components/SEA/locations"
 
 export default function Places({ data }) {
   const [selected, setSelected] = useState(null)
@@ -37,7 +37,7 @@ export default function Places({ data }) {
           </motion.ul>
           <AnimatePresence exitBeforeEnter>
             {selected && (
-              <PlaceItem
+              <PlaceBig
                 key="item"
                 name={selected.name}
                 layoutId={items[selected.id].title}
@@ -46,6 +46,7 @@ export default function Places({ data }) {
                 description={items[selected.id].description}
                 color={items[selected.id].color}
                 bg={items[selected.id].bg}
+                link={`/`}
               />
             )}
           </AnimatePresence>
