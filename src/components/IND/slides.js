@@ -52,4 +52,20 @@ export const slides = [
     position: `50% 50%`,
     backgroundColor: `#293321`,
   },
+  {
+    id: 5,
+    uid: "IND5",
+    title: "SO MUCH IN SO LITTLE",
+    titleColor: `#C77F4B`,
+    description: `Few places have as many Unesco World Heritage Sites (eight) 
+    packed into such a small area. Sri Lanka's 2000-plus years of culture can be 
+    discovered at ancient sites where legendary temples boast beautiful details 
+    even as they shelter in caves or on prominent peaks. More recent are evocative 
+    colonial fortresses, from Galle to Trincomalee. Safari tours of Sri Lanka’s 
+    pleasantly relaxed national parks encounter leopards, water buffaloes, 
+    all manner of birds and a passel of primates.`,
+    descriptionColor: `white`,
+    position: `50% 50%`,
+    backgroundColor: `#000000`,
+  },
 ]
