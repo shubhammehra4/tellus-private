@@ -14,7 +14,7 @@ export const items = [
   },
   {
     title: "LAOS",
-    bg: "#E3CBB8",
+    bg: "#ECB68E",
     color: "#063540",
     description:
       "Vivid nature, voluptuous landscapes and a vibrant culture collide with a painful past and optimistic future to make Laos an enigmatic experience for the adventurous. With its dark and brooding jungle, glowing emerald rice fields, and glistening tea leaves that blanket the mountains, the landscape in Laos changes shades of green like a chameleon. Travellers rave about Laos for a reason. Adventure seekers can lose themselves in underground river caves, on jungle zip lines or while climbing karsts. And if all this sounds a little too strenuous, then unwind with a spa session or yoga class. Laos has something for everyone.",
