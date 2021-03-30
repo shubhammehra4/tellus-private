@@ -1,16 +1,14 @@
-import React, { useRef, useContext, useState } from "react"
+import React, { useRef, useState } from "react"
 import { navigate } from "gatsby"
-import { Context } from "../context/Context"
-
 import SEO from "../components/seo"
 import { BsEyeFill, BsEyeSlashFill } from "react-icons/bs"
+import { useAuth } from "../context/Context"
 
 const IndexPage = () => {
   const password = useRef()
   const success = useRef()
   const [visible, setVisible] = useState(false)
-
-  const { validateAuth } = useContext(Context)
+  const { validateAuth } = useAuth()
 
   const handlePassword = e => {
     e.preventDefault()

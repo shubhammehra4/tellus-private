@@ -1,16 +1,25 @@
-import React from "react"
-import { Link } from "gatsby"
-// import { Context } from "../context/Context"
+import React, { useEffect } from "react"
+import { Link, navigate } from "gatsby"
 import SEO from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
+import { useAuth } from "../context/Context"
+import { BiLoaderCircle } from "react-icons/bi"
 
 const Countries = () => {
-  // const { auth } = useContext(Context)
-  // useEffect(() => {
-  //   if (!auth) {
-  //     navigate(`/`)
-  //   }
-  // }, [auth])
+  const { auth } = useAuth()
+  useEffect(() => {
+    if (!auth) {
+      navigate(`/`)
+    }
+  }, [])
+
+  if (!auth) {
+    return (
+      <div className="h-screen w-screen flex justify-center items-center">
+        <BiLoaderCircle className="animate-spin h-20 w-10" />
+      </div>
+    )
+  }
 
   return (
     <>
