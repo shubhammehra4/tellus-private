@@ -11,7 +11,7 @@ const Countries = () => {
     if (!auth) {
       navigate(`/`)
     }
-  }, [])
+  }, [auth])
 
   if (!auth) {
     return (
