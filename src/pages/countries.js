@@ -47,7 +47,7 @@ const Countries = () => {
                 }}
               >
                 <h1 className="country-name palanquin-bold text-white text-4xl tracking-widest">
-                  INDIA
+                  INDIAN SUBCONTINENT
                 </h1>
               </div>
             </div>
