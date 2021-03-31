@@ -73,5 +73,5 @@ input#password:not(:placeholder-shown) ~ label {
 }
 
 .max-w-9xl {
-  max-width: 1400px;
+  max-width: 1440px;
 }
