@@ -25,7 +25,7 @@ function China({ data }) {
         stopOnHover={false}
         dynamicHeight={false}
         autoPlay={true}
-        interval={80000}
+        interval={8000}
         transitionTime={600}
         swipeScrollTolerance={50}
         renderIndicator={(onClickHandler, isSelected, index, label) => {
@@ -76,7 +76,7 @@ function China({ data }) {
             backgroundColor={s.backgroundColor}
             src={getImage(data[s.uid])}
             last={i === 4}
-            link={`/china/places/`}
+            link={`/`}
           />
         ))}
       </Carousel>
@@ -108,7 +108,6 @@ export const pageQuery = graphql`
         gatsbyImageData(
           placeholder: BLURRED
           width: 1440
-          quality: 40
           formats: [AUTO, WEBP, AVIF]
         )
       }
