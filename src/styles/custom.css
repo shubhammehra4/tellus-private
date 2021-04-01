@@ -7,6 +7,10 @@
   font-family: "Palanquin", sans-serif;
   font-weight: 100;
 }
+.lato {
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+}
 
 .c-name {
   letter-spacing: 4.2rem;
@@ -74,4 +78,9 @@ input#password:not(:placeholder-shown) ~ label {
 
 .max-w-9xl {
   max-width: 1440px;
+}
+
+:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
 }
