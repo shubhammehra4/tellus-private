@@ -26,7 +26,7 @@ const Countries = () => {
       <SEO title="Countries" />
       <section className="w-screen min-h-screen flex flex-col items-center justify-evenly mx-auto">
         <h1 className="palanquin-bold text-center text-4xl xs:text-5xl lg:text-6xl tracking-widest text-gray-300 my-10 lg:my-0 px-1">
-          <span className="text-gray-800">TELL US</span> YOUR DESTINATION
+          <span className="text-gray-800">TELLUS</span> YOUR DESTINATION
         </h1>
         <div className="w-full flex flex-col lg:flex-row items-center justify-evenly">
           <Link className="country-link" to="/indian-subcontinent/">
