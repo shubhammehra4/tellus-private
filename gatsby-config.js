@@ -5,7 +5,6 @@ module.exports = {
     description: `TELLUS PRIVATE TOURISMS`,
     author: `@shubhammehra4, @karnsharma`,
   },
-  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
