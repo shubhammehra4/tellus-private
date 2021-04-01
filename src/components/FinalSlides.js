@@ -79,7 +79,7 @@ function FinalSlides({ state, setState }) {
   return (
     <>
       <Carousel
-        className="w-screen"
+        className="w-screen md:hidden"
         selectedItem={slide}
         showThumbs={false}
         showStatus={false}
@@ -103,7 +103,7 @@ function FinalSlides({ state, setState }) {
       <div className="flex items-center px-20 lg:px-40 w-screen mb-8">
         {slide > 0 && (
           <button
-            className="lato h-12 w-28 bg-blue-700 text-white mr-auto"
+            className="lato h-12 w-28 bg-blue-700 text-white mr-auto md:hidden"
             onClick={prev}
           >
             Previous
@@ -111,7 +111,7 @@ function FinalSlides({ state, setState }) {
         )}
         {slide < 3 && (
           <button
-            className="lato h-12 w-28 bg-blue-700 text-white ml-auto"
+            className="lato h-12 w-28 bg-blue-700 text-white ml-auto md:hidden"
             onClick={next}
           >
             Next
