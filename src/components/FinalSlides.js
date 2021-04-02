@@ -100,23 +100,21 @@ function FinalSlides({ state, setState }) {
           />
         ))}
       </Carousel>
-      <div className="flex items-center px-20 lg:px-40 w-screen mb-8">
-        {slide > 0 && (
-          <button
-            className="lato h-12 w-28 bg-blue-700 text-white mr-auto md:hidden"
-            onClick={prev}
-          >
-            Previous
-          </button>
-        )}
-        {slide < 3 && (
-          <button
-            className="lato h-12 w-28 bg-blue-700 text-white ml-auto md:hidden"
-            onClick={next}
-          >
-            Next
-          </button>
-        )}
+      <div className="flex items-center px-20 w-screen mb-8">
+        <button
+          disabled={slide > 0 ? false : true}
+          className="lato h-12 w-28 bg-green-600 text-white mr-auto md:hidden"
+          onClick={prev}
+        >
+          Previous
+        </button>
+        <button
+          disabled={slide < 3 ? false : true}
+          className="lato h-12 w-28 bg-blue-600 text-white ml-auto md:hidden"
+          onClick={next}
+        >
+          Next
+        </button>
       </div>
     </>
   )
