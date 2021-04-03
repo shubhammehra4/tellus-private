@@ -36,7 +36,7 @@ export default function PlaceList({
       >
         <motion.h1
           layoutId={`${layoutId}-title`}
-          className="country-name palanquin-bold text-white text-4xl tracking-widest"
+          className="country-name palanquin-bold text-white text-4xl tracking-widest mt-auto"
         >
           {name}
         </motion.h1>

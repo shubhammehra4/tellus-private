@@ -40,7 +40,7 @@ export default function PlaceBig({
         >
           <motion.h1
             layoutId={`${layoutId}-title`}
-            className="country-name palanquin-bold text-white text-4xl md:text-7xl lg:text-8xl opacity-50 tracking-widest"
+            className="country-name palanquin-bold text-white text-4xl md:text-7xl lg:text-8xl opacity-70 tracking-widest"
           >
             {name}
           </motion.h1>
@@ -67,7 +67,7 @@ export default function PlaceBig({
         <p>{description}</p>
         <Link
           to={link}
-          className="mt-3 py-2 px-4 bg-gray-800 text-white hover:bg-white hover:text-gray-800 transition-all duration-300 ease-in "
+          className="mt-6 py-2 px-4 bg-gray-800 text-white hover:bg-white hover:text-gray-800 transition-all duration-300 ease-in"
         >
           I'M IN
         </Link>
