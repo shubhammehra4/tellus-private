@@ -30,7 +30,7 @@ function India({ data }) {
         swipeScrollTolerance={50}
         renderIndicator={(onClickHandler, isSelected, index, label) => {
           if (isSelected) {
-            if (index === 2) {
+            if (index === 3) {
               const indicators = document.querySelector(".control-dots")
               const button = document.querySelector("#go")
               indicators.style.display = "none"
@@ -38,7 +38,7 @@ function India({ data }) {
                 button.style.opacity = 1
               }, 1000)
             }
-            if (index === 1) {
+            if (index === 2) {
               const indicators = document.querySelector(".control-dots")
               indicators.style.display = "block"
             }
@@ -75,7 +75,7 @@ function India({ data }) {
             position={s.position}
             backgroundColor={s.backgroundColor}
             src={getImage(data[s.uid])}
-            last={i === 2}
+            last={i === 3}
             link={`/`}
           />
         ))}
@@ -104,6 +104,15 @@ export const pageQuery = graphql`
       }
     }
     BH3: file(relativePath: { eq: "bhutan-3.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          placeholder: BLURRED
+          width: 1440
+          formats: [AUTO, WEBP, AVIF]
+        )
+      }
+    }
+    BH4: file(relativePath: { eq: "bhutan-4.jpg" }) {
       childImageSharp {
         gatsbyImageData(
           placeholder: BLURRED
