@@ -33,7 +33,7 @@ const Countries = () => {
             <div className="country grid max-w-sm m-10 md:m-6">
               <StaticImage
                 src="../images/india-main.jpg"
-                alt="India"
+                alt="Indian Subcontinent"
                 placeholder="blurred"
                 className="country-image h-full w-full"
                 formats={["auto", "webp", "avif"]}
@@ -56,7 +56,7 @@ const Countries = () => {
             <div className="country grid w-4/5 max-w-sm m-10 md:m-6">
               <StaticImage
                 src="../images/south-east-asia-main.jpg"
-                alt="India"
+                alt="South East Asia"
                 placeholder="blurred"
                 className="country-image h-full w-full"
                 formats={["auto", "webp", "avif"]}
@@ -79,7 +79,7 @@ const Countries = () => {
             <div className="country grid w-4/5 max-w-sm m-10 md:m-6">
               <StaticImage
                 src="../images/china-main.jpg"
-                alt="India"
+                alt="China"
                 placeholder="blurred"
                 className="country-image h-full w-full"
                 formats={["auto", "webp", "avif"]}
@@ -94,6 +94,29 @@ const Countries = () => {
               >
                 <h1 className="country-name palanquin-bold text-4xl tracking-widest text-red-600">
                   CHINA
+                </h1>
+              </div>
+            </div>
+          </Link>
+          <Link className="country-link" to="/mongolia/">
+            <div className="country grid w-4/5 max-w-sm m-10 md:m-6">
+              <StaticImage
+                src="../images/mongolia-1.jpg"
+                alt="Mongolia"
+                placeholder="blurred"
+                className="country-image h-full w-full"
+                formats={["auto", "webp", "avif"]}
+                width={450}
+                height={450}
+              />
+              <div
+                className="relative place-items-center grid"
+                style={{
+                  gridArea: "1/1",
+                }}
+              >
+                <h1 className="country-name palanquin-bold text-4xl tracking-widest text-white">
+                  MONGOLIA
                 </h1>
               </div>
             </div>
