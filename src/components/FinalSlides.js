@@ -43,7 +43,7 @@ function FinalSlides({ state, setState }) {
   const [slide, setSlide] = useState(0)
 
   const next = () => {
-    if (slide !== 3) {
+    if (slide !== 4) {
       setSlide(prevSlide => prevSlide + 1)
     }
   }
@@ -105,17 +105,17 @@ function FinalSlides({ state, setState }) {
           />
         ))}
       </Carousel>
-      <div className="flex items-center justify-between px-20 w-11/12 mb-8">
+      <div className="flex items-center justify-between px-20 mb-8 w-screen">
         <button
           disabled={slide > 0 ? false : true}
-          className="lato h-12 w-24 bg-gray-700 text-white md:hidden"
+          className="lato h-12 w-24 bg-gray-700 text-white md:hidden mx-auto"
           onClick={prev}
         >
           Previous
         </button>
         <button
           disabled={slide < 4 ? false : true}
-          className="lato h-12 w-24 bg-gray-800 text-white md:hidden"
+          className="lato h-12 w-24 bg-gray-800 text-white md:hidden mx-auto"
           onClick={next}
         >
           Next

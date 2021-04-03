@@ -72,7 +72,8 @@ function Final() {
               (state.activity &&
                 state.pace &&
                 state.personality &&
-                state.interest) === null
+                state.interest &&
+                state.days) === null
                 ? `w-32 h-12 mb-4 opacity-0 md:hidden`
                 : `w-32 h-12 bg-gray-500 text-white lato mb-4 md:hidden`
             }
