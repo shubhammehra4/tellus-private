@@ -74,6 +74,11 @@ function FinalSlides({ state, setState }) {
       values: ["WALKS", "EXPLORE", "GENERAL"],
       id: "activity",
     },
+    {
+      title: "DAYS YOU HAVE",
+      values: [5, 7, 12],
+      id: "days",
+    },
   ]
 
   return (
@@ -100,17 +105,17 @@ function FinalSlides({ state, setState }) {
           />
         ))}
       </Carousel>
-      <div className="flex items-center px-20 w-screen mb-8">
+      <div className="flex items-center justify-between px-20 w-11/12 mb-8">
         <button
           disabled={slide > 0 ? false : true}
-          className="lato h-12 w-28 bg-green-600 text-white mr-auto md:hidden"
+          className="lato h-12 w-24 bg-gray-700 text-white md:hidden"
           onClick={prev}
         >
           Previous
         </button>
         <button
-          disabled={slide < 3 ? false : true}
-          className="lato h-12 w-28 bg-blue-600 text-white ml-auto md:hidden"
+          disabled={slide < 4 ? false : true}
+          className="lato h-12 w-24 bg-gray-800 text-white md:hidden"
           onClick={next}
         >
           Next

@@ -15,7 +15,7 @@ export default function SLIDE({
 }) {
   return (
     <section className="w-screen h-screen flex flex-col">
-      <div className="grid w-screen h-2/3 md:h-3/4">
+      <div className="grid w-screen h-3/5 md:h-3/4">
         <GatsbyImage
           image={src}
           alt={title}
@@ -32,7 +32,7 @@ export default function SLIDE({
         ></div>
       </div>
       <div
-        className="w-screen h-1/3 md:h-1/4 flex flex-col justify-center items-center text-center"
+        className="w-screen h-2/5 md:h-1/4 flex flex-col justify-center items-center text-center"
         style={{ backgroundColor }}
       >
         <h1
@@ -45,16 +45,16 @@ export default function SLIDE({
         </h1>
         <p
           className={
-            description.length > 150
+            description.length > 200
               ? `text-sm md:text-lg lg:text-xl max-w-9xl px-2`
-              : `text-sm md:text-lg lg:text-xl max-w-3xl px-2`
+              : `text-sm md:text-lg lg:text-xl max-w-3xl px-2 mb-10 md:mb-0`
           }
           style={{ fontFamily: "'Lato', sans-serif", color: descriptionColor }}
         >
           {description}
         </p>
         {last && (
-          <Link className="mt-1 md:mt-5" to={link}>
+          <Link className="mt-4 md:mt-5" to={link}>
             <button
               id="go"
               className="px-6 md:px-10 py-1 md:py-3 bg-white font-bold text-sm md:text-base tracking-widest hover:bg-black hover:text-white transition duration-300 ease-in-out opacity-0"

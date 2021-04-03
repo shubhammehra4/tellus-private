@@ -9,6 +9,7 @@ function Final() {
     interest: null,
     personality: null,
     activity: null,
+    days: null,
   })
   const [showModal, setShowModal] = useState(false)
   const email = useRef("")
@@ -45,7 +46,7 @@ function Final() {
       <SEO title="ABOUT YOU" />
       <section className="w-screen min-h-screen flex flex-col items-center justify-evenly mx-auto">
         <h1 className="palanquin-bold text-center text-4xl xs:text-5xl lg:text-6xl tracking-widest text-gray-300 px-1 mt-10">
-          <span className="text-gray-800">TELLUS</span> ABOUT YOU
+          <span className="text-gray-800">TELLUS</span> ABOUT
         </h1>
         <section className="w-screen flex-grow hidden md:flex flex-col items-center justify-evenly mx-auto ">
           <FinalList state={state} setState={setState} />
@@ -54,7 +55,8 @@ function Final() {
               (state.activity &&
                 state.pace &&
                 state.personality &&
-                state.interest) === null
+                state.interest &&
+                state.days) === null
             }
             onClick={() => setShowModal(true)}
             className="w-44 h-16 bg-gray-500 text-white lato"
@@ -84,8 +86,8 @@ function Final() {
           className="fixed z-10 w-screen h-screen inset-0 overflow-hidden flex justify-center items-center animated fadeIn faster"
           style={{ background: "rgba(0,0,0,.6)" }}
         >
-          <div className="shadow-lg bg-white w-11/12 md:max-w-xl mx-auto z-50 overflow-y-auto py-4 px-6">
-            <div className="relative flex justify-center items-center pb-3 w-full">
+          <div className="shadow-lg bg-white w-11/12 md:max-w-xl mx-auto z-50 overflow-y-auto py-4 px-6 md:pt-14 md:pb-8">
+            <div className="relative flex justify-center items-center md:pb-3 w-full">
               <h1 className="palanquin-bold text-center text-3xl md:text-5xl text-gray-800">
                 TELL US <span className="text-gray-400">YOUR</span>
               </h1>
@@ -104,7 +106,7 @@ function Final() {
                 </svg>
               </button>
             </div>
-            <form className="w-full my-8 md:my-10 flex flex-col justify-center items-center">
+            <form className="w-full my-4 md:my-10 flex flex-col justify-center items-center">
               <label
                 htmlFor="name"
                 className="palanquin-bold text-center text-2xl md:text-3xl text-gray-800 my-4 md:my-6"
@@ -129,18 +131,18 @@ function Final() {
                 ref={email}
               />
             </form>
-            <div className="flex justify-between pt-2">
+            <div className="flex justify-between">
               <button
-                className="px-4 py-3 bg-gray-600 text-white  focus:outline-none"
+                className="h-12 w-24 bg-gray-600 text-white  focus:outline-none"
                 onClick={() => setShowModal(false)}
               >
-                Close
+                CLOSE
               </button>
               <button
-                className="px-4 py-3 bg-indigo-600 text-white  focus:outline-none"
+                className="h-12 w-24 bg-gray-800 text-white  focus:outline-none"
                 onClick={handleSubmit}
               >
-                Confirm
+                CONFIRM
               </button>
             </div>
           </div>

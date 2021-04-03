@@ -20,7 +20,7 @@ studded with ruins of lost civilisations: This is South East Asia`,
     down. Coral reefs have formed islands, and sea spray has sculpted them
     into surreal karst outcrops.`,
     descriptionColor: `white`,
-    position: `50% 70%`,
+    position: `50% 65%`,
     backgroundColor: `#33809C`,
   },
   {

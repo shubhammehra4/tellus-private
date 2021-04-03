@@ -3,7 +3,7 @@ import React from "react"
 function ListComponent({ id, title, values, state, setState }) {
   return (
     <>
-      <h2 className="palanquin-bold text-4xl tracking-widest text-gray-800">
+      <h2 className="palanquin-bold text-3xl tracking-widest text-gray-800">
         {title}
       </h2>
       <div className="flex items-center justify-evenly w-3/5">
@@ -56,6 +56,11 @@ function FinalList({ state, setState }) {
       title: "ACTIVITIES YOU PREFER",
       values: ["WALKS", "EXPLORE", "GENERAL"],
       id: "activity",
+    },
+    {
+      title: "DAYS YOU HAVE",
+      values: [5, 7, 12],
+      id: "days",
     },
   ]
   return (

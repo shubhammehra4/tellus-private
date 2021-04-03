@@ -49,7 +49,7 @@ export const srilanka = [
     then there are the beaches. Dazzlingly white and often untrodden, they ring the 
     island so that no matter where you go, you’ll be near a sandy gem.`,
     descriptionColor: `white`,
-    position: `50% 45%`,
+    position: `50% 48%`,
     backgroundColor: `#293321`,
   },
   {
@@ -153,7 +153,7 @@ export const nepal = [
     golden temples, charming hill villages and jungle wildlife watching 
     to offer one of the world's great travel destinations.`,
     descriptionColor: `white`,
-    position: `50% 40%`,
+    position: `50% 20%`,
     backgroundColor: `#315088`,
   },
   {
@@ -167,7 +167,7 @@ export const nepal = [
     and joining Tibetan Buddhist pilgrims on a spiritual stroll around 
     centuries-old stupas and monasteries. Many people return here over and over again.`,
     descriptionColor: `#FE692E`,
-    position: `50% 75%`,
+    position: `50% 85%`,
     backgroundColor: `#FBF3F1`,
   },
   {
@@ -181,7 +181,7 @@ export const nepal = [
     Choose from a safari lodge in central Chitwan or go exploring on a wilder trip to 
     remote Bardia or Koshi Tappu, stopping en route to visit the birthplace of Buddha on the steamy plains near Lumbini.`,
     descriptionColor: `#808B27`,
-    position: `50% 65%`,
+    position: `50% 70%`,
     backgroundColor: `#F2F3F1`,
   },
   {
@@ -242,5 +242,21 @@ export const bhutan = [
     descriptionColor: `white`,
     position: `50% 40%`,
     backgroundColor: `#112104`,
+  },
+  {
+    id: 4,
+    uid: "BH4",
+    title: "LOW VOLUME, HIGH VALUE TOURISM",
+    titleColor: `#E7BA66`,
+    description: `There is pristine eastern Himalayan landscape, 
+    where snow-capped peaks rise above primeval forests and traditional 
+    villages. To this picture-book landscape add majestic fortress-like 
+    dzongs and monasteries, many of which act as a stage for spectacular 
+    tsechus (dance festivals) attended by an almost medieval-looking audience. 
+    Then there are the textiles and handicrafts, outrageous archery competitions, 
+    high-altitude trekking trails, and stunning flora and fauna.`,
+    descriptionColor: `#D5E3E3`,
+    position: `50% 27%`,
+    backgroundColor: `#4C1413`,
   },
 ]

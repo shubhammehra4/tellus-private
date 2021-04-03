@@ -81,7 +81,7 @@ const IndexPage = () => {
           </div>
         </form>
         <footer className="absolute bottom-2 text-sm md:text-base text-center px-3">
-          &copy; <strong>Tellus Travel</strong> |{" "}
+          &copy;Tellus Travel |{" "}
           <address className="inline-block">
             353 avenue de la Basilique, 1081 Brussels – Belgium
           </address>{" "}

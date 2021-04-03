@@ -46,7 +46,7 @@ const Countries = () => {
                   gridArea: "1/1",
                 }}
               >
-                <h1 className="country-name palanquin-bold text-white text-4xl tracking-widest">
+                <h1 className="country-name palanquin-bold text-white text-4xl tracking-widest text-center">
                   INDIAN SUBCONTINENT
                 </h1>
               </div>

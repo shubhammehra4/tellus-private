@@ -49,7 +49,7 @@ export const slides = [
     sublime sapphire lakes of Tibet or the impassive deserts of Inner Mongolia, island-hop 
     in Hong Kong or cycle between fairy-tale karst pinnacles around Yangshuo.`,
     descriptionColor: `white`,
-    position: `70% 80%`,
+    position: `70% 75%`,
     backgroundColor: `#133658`,
   },
   {
