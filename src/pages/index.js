@@ -35,9 +35,13 @@ const IndexPage = () => {
     <>
       <SEO title="Home" />
       <section className="flex flex-col justify-center items-center w-screen h-screen">
-        <div className="palanquin-bold absolute top-3 flex justify-between w-screen px-6 text-gray-500 underline tracking-widest">
-          <Link to="/philosophy">PHILOSOPHY</Link>
-          <Link to="/story">STORY</Link>
+        <div className="lato-reg absolute top-3 flex justify-between w-screen px-6 text-gray-500 tracking-widest">
+          <Link className="hover:underline focus:underline" to="/philosophy">
+            PHILOSOPHY
+          </Link>
+          <Link className="hover:underline focus:underline" to="/story">
+            STORY
+          </Link>
         </div>
         <h1 className="palanquin-bold c-name text-xl md:text-6xl">TELLUS</h1>
         <p
