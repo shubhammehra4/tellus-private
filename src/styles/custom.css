@@ -12,6 +12,34 @@
   font-weight: 700;
 }
 
+.lato-reg {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+}
+
+.story {
+  font-size: 26px;
+  color: rgba(31, 41, 55, 1);
+}
+
+@media (max-width: 760px) {
+  .story {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .story {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 380px) {
+  .story {
+    font-size: 14px;
+  }
+}
+
 .c-name {
   letter-spacing: 4.2rem;
   margin-right: -4.2rem;
