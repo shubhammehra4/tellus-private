@@ -13,7 +13,7 @@ function IndianSubcontinent() {
         </h1>
         <div className="w-full flex flex-col lg:flex-row items-center justify-evenly">
           <Link className="country-link" to="/indian-subcontinent/india/">
-            <div className="country grid max-w-sm m-10 md:m-6">
+            <div className="country grid w-4/5 max-w-sm m-10 md:m-6">
               <StaticImage
                 src="../../images/india-1.jpg"
                 alt="India"
