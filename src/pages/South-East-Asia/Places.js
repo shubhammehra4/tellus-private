@@ -46,7 +46,7 @@ export default function Places({ data }) {
                 description={items[selected.id].description}
                 color={items[selected.id].color}
                 bg={items[selected.id].bg}
-                link={`/`}
+                link={`/final`}
               />
             )}
           </AnimatePresence>

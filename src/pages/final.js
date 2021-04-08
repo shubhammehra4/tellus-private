@@ -1,9 +1,10 @@
+import { navigate } from "gatsby-link"
 import React, { useState, useRef } from "react"
 import FinalList from "../components/FinalList"
 import FinalSlides from "../components/finalSlides"
 import SEO from "../components/seo"
 
-function Final() {
+function Final({ location }) {
   const [state, setState] = useState({
     pace: null,
     interest: null,
@@ -14,13 +15,17 @@ function Final() {
   const [showModal, setShowModal] = useState(false)
   const email = useRef("")
   const name = useRef("")
+  let destination = ""
+  if (location.state) {
+    destination = location.state.value
+  }
 
   const validateEmail = email => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     return re.test(email)
   }
 
-  const handleSubmit = e => {
+  const handleSubmit = () => {
     const nameVal = name.current.value
     const emailVal = email.current.value
     email.current.style.borderColor = "rgba(156, 163, 175,1)"
@@ -37,8 +42,12 @@ function Final() {
       email.current.focus()
       return
     }
-    alert(JSON.stringify({ nameVal, emailVal }))
+    alert(JSON.stringify({ nameVal, emailVal, ...state, destination }, null, 4))
     setShowModal(false)
+  }
+
+  if (!destination && typeof window !== "undefined") {
+    navigate("/countries")
   }
 
   return (

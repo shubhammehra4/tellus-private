@@ -76,7 +76,8 @@ function China({ data }) {
             backgroundColor={s.backgroundColor}
             src={getImage(data[s.uid])}
             last={i === 4}
-            link={`/`}
+            link={`/final`}
+            value={`CHINA`}
           />
         ))}
       </Carousel>

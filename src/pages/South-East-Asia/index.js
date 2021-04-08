@@ -77,6 +77,7 @@ function SouthEastAsia({ data }) {
             src={getImage(data[s.uid])}
             last={i === 4}
             link={`/south-east-asia/places/`}
+            value={null}
           />
         ))}
       </Carousel>

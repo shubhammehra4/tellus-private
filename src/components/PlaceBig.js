@@ -67,6 +67,7 @@ export default function PlaceBig({
         <p>{description}</p>
         <Link
           to={link}
+          state={{ value: name }}
           className="mt-6 py-2 px-4 bg-gray-800 text-white hover:bg-white hover:text-gray-800 transition-all duration-300 ease-in"
         >
           I'M IN

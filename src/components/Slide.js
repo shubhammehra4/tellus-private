@@ -12,6 +12,7 @@ export default function SLIDE({
   src,
   last,
   link,
+  value,
 }) {
   return (
     <section className="w-screen h-screen flex flex-col">
@@ -54,7 +55,7 @@ export default function SLIDE({
           {description}
         </p>
         {last && (
-          <Link className="mt-4 md:mt-5" to={link}>
+          <Link className="mt-4 md:mt-5" to={link} state={{ value }}>
             <button
               id="go"
               className="px-6 md:px-10 py-1 md:py-3 bg-white font-bold text-sm md:text-base tracking-widest hover:bg-black hover:text-white transition duration-300 ease-in-out opacity-0"
