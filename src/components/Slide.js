@@ -47,10 +47,10 @@ export default function SLIDE({
         <p
           className={
             description.length > 200
-              ? `text-sm md:text-lg lg:text-xl max-w-9xl px-2`
-              : `text-sm md:text-lg lg:text-xl max-w-3xl px-2 mb-10 md:mb-0`
+              ? `lato-reg text-sm md:text-lg lg:text-xl max-w-9xl px-2`
+              : `lato-reg text-sm md:text-lg lg:text-xl max-w-3xl px-2 mb-10 md:mb-0`
           }
-          style={{ fontFamily: "'Lato', sans-serif", color: descriptionColor }}
+          style={{ color: descriptionColor }}
         >
           {description}
         </p>
@@ -58,7 +58,7 @@ export default function SLIDE({
           <Link className="mt-4 md:mt-5" to={link} state={{ value }}>
             <button
               id="go"
-              className="px-6 md:px-10 py-1 md:py-3 bg-white font-bold text-sm md:text-base tracking-widest hover:bg-black hover:text-white transition duration-300 ease-in-out opacity-0"
+              className="lato px-8 md:px-10 py-2 md:py-3 bg-white font-bold text-sm md:text-base tracking-widest hover:bg-black hover:text-white transition duration-300 ease-in-out opacity-0"
             >
               GO
             </button>

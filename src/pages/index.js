@@ -3,6 +3,7 @@ import { Link, navigate } from "gatsby"
 import SEO from "../components/seo"
 import { BsEyeFill, BsEyeSlashFill } from "react-icons/bs"
 import { useAuth } from "../context/Context"
+import "@fontsource/lato/400-italic.css"
 
 const IndexPage = () => {
   const password = useRef()
@@ -16,7 +17,7 @@ const IndexPage = () => {
       success.current.style.borderColor = "green"
       validateAuth(password.current.value)
       console.log(process.env.PASSWORD)
-      navigate(`/countries`)
+      navigate(`/destination/`)
     } else if (password.current.value.length > 12) {
       success.current.style.borderColor = "red"
     } else {
@@ -69,7 +70,7 @@ const IndexPage = () => {
             />
             <label
               htmlFor="password"
-              className="text-center w-full absolute top-0 -z-1"
+              className="text-center w-full absolute top-0 -z-1 lato-reg"
               style={{ color: "rgba(0, 0, 0, 0.4)" }}
             >
               PASSWORD
@@ -88,7 +89,7 @@ const IndexPage = () => {
             </button>
           </div>
         </form>
-        <footer className="absolute bottom-2 text-sm md:text-base text-center px-3">
+        <footer className="absolute bottom-1 md:bottom-2 text-sm md:text-base text-center px-3 lato-reg tracking-wider">
           &copy;Tellus Travel |{" "}
           <address className="inline-block">
             353 avenue de la Basilique, 1081 Brussels – Belgium

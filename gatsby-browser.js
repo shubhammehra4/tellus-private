@@ -1,0 +1,5 @@
+import "@fontsource/lato/400.css"
+import "@fontsource/lato/700.css"
+import "@fontsource/palanquin/100.css"
+import "@fontsource/palanquin/700.css"
+import "./src/styles/global.css"

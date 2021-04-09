@@ -10,13 +10,13 @@ function Philosophy() {
       <section className="w-screen h-screen flex flex-col lg:flex-row">
         <StaticImage
           className="lg:w-1/2"
-          src="../images/thailand.jpg"
+          src="../images/philosophy.jpg"
           alt="OUR PHILOSOPHY"
           placeholder="blurred"
           formats={["auto", "webp", "avif"]}
         />
         <div className="text-center lg:w-1/2 flex flex-col items-center justify-center px-8">
-          <h1 className="palanquin-bold text-4xl lg:text-6xl text-gray-800 tracking-widest mt-2 mb-8 md:mb-12">
+          <h1 className="palanquin-bold text-4xl lg:text-6xl text-gray-800 tracking-widest mt-2 mb-6 md:mb-12">
             OUR PHILOSOPHY
           </h1>
           <p className="lato-reg text-center md:w-3/5 text-base md:text-xl lg:text-2xl">
@@ -39,14 +39,8 @@ function Philosophy() {
             All our programs are designed to have a minimal impact on the local
             environment.
           </p>
-          {/* <p className="lato-reg text-center md:w-3/5 mt-4 md:mt-8 story">
-            Over the years, Tellus grew into a healthy company with four
-            distinct facets and bit by bit like-minded people joined in and the
-            Tellus team matured into a larger family of travel enthusiasts,
-            ready to share their passion which is as fresh as day one.
-          </p> */}
           <Link to="/">
-            <button className="px-12 py-4 bg-gray-500 text-white mt-4 md:mt-8 mb-2 focus:outline-none">
+            <button className="px-8 py-2 md:px-12 md:py-4 bg-gray-500 text-white mt-4 md:mt-8 mb-2 focus:outline-none">
               HOME
             </button>
           </Link>

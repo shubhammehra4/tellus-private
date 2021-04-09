@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,4 +12,161 @@ a {
 }
 a:focus {
   outline: none;
+}
+
+.palanquin-bold {
+  font-family: "Palanquin";
+  font-weight: 700;
+}
+
+.palanquin-light {
+  font-family: "Palanquin";
+  font-weight: 100;
+}
+.lato {
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+.lato-reg {
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.story {
+  font-size: 26px;
+  color: rgba(31, 41, 55, 1);
+}
+
+@media (max-width: 760px) {
+  .story {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .story {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 380px) {
+  .story {
+    font-size: 14px;
+  }
+}
+
+.c-name {
+  letter-spacing: 4.2rem;
+  margin-right: -4.2rem;
+}
+.c-status {
+  letter-spacing: 3.5rem;
+  margin-right: -3.5rem;
+}
+
+input#password:focus-within ~ label,
+input#password:not(:placeholder-shown) ~ label {
+  @apply hidden;
+}
+
+.static-image {
+  grid-area: 1/1;
+}
+
+.country {
+  height: 28rem;
+}
+.country-image {
+  grid-area: 1/1;
+  filter: blur(1px) grayscale(1);
+  transition: all 300ms ease-out;
+}
+
+.country:hover .country-image {
+  filter: blur(0) grayscale(0);
+  transform: scale(1.02);
+}
+.country-link:focus .country-image {
+  filter: blur(0) grayscale(0);
+  transform: scale(1.02);
+}
+
+.country-name {
+  text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.text-shadow {
+  text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 760px) {
+  .c-name {
+    letter-spacing: 2rem;
+    margin-right: -2rem;
+  }
+  .c-status {
+    letter-spacing: 2rem;
+    margin-right: -2rem;
+  }
+}
+
+.push picture {
+  object-position: 50% 95%;
+}
+@media (max-width: 764px) {
+  .push picture {
+    object-position: right;
+  }
+}
+
+.max-w-9xl {
+  max-width: 1440px;
+}
+
+:disabled {
+  cursor: not-allowed;
+  opacity: 0.2;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }

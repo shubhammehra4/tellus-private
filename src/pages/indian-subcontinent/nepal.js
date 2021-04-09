@@ -75,6 +75,7 @@ function India({ data }) {
             position={s.position}
             backgroundColor={s.backgroundColor}
             src={getImage(data[s.uid])}
+            last={i === 3}
             link={`/final`}
             value={`NEPAL`}
           />

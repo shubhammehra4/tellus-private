@@ -61,8 +61,8 @@ export default function PlaceBig({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 0.1 } }}
         layoutId={`${layoutId}-desc`}
-        style={{ backgroundColor: bg, color, fontFamily: "'Lato', sans-serif" }}
-        className="flex flex-col justify-center items-center max-w-3xl w-11/12 pb-4 md:pb-0 md:h-2/5 mx-auto px-2 md:px-4 text-center text-sm md:text-xl"
+        style={{ backgroundColor: bg, color }}
+        className="flex flex-col justify-center items-center max-w-3xl w-11/12 pb-4 md:pb-0 md:h-2/5 mx-auto px-2 md:px-4 text-center text-sm md:text-xl lato-reg"
       >
         <p>{description}</p>
         <Link

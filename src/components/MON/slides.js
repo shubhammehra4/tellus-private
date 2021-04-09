@@ -58,7 +58,7 @@ export const slides = [
     Ask locals and they will probably start gushing about the spectacular countryside, 
     vast steppes, rugged mountains, clear lakes and abundant wildlife and livestock. Some 
     areas are so remote you could drive a full day and see almost no signs of human 
-    habitation. It’s this true wilderness experience that many people find so appealing. `,
+    habitation. It’s this true wilderness experience that many people find so appealing.`,
     descriptionColor: `white`,
     position: `50% 70%`,
     backgroundColor: `#2E1D1B`,
