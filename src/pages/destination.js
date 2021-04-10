@@ -37,8 +37,8 @@ const Countries = () => {
                 placeholder="blurred"
                 className="country-image h-full w-full"
                 formats={["auto", "webp", "avif"]}
-                width={450}
-                height={450}
+                width={600}
+                height={600}
               />
               <div
                 className="relative place-items-center grid"
@@ -60,8 +60,8 @@ const Countries = () => {
                 placeholder="blurred"
                 className="country-image h-full w-full"
                 formats={["auto", "webp", "avif"]}
-                width={450}
-                height={450}
+                width={600}
+                height={600}
               />
               <div
                 className="relative place-items-center grid"
@@ -83,8 +83,8 @@ const Countries = () => {
                 placeholder="blurred"
                 className="country-image h-full w-full"
                 formats={["auto", "webp", "avif"]}
-                width={450}
-                height={450}
+                width={600}
+                height={600}
               />
               <div
                 className="relative place-items-center grid"
@@ -106,8 +106,8 @@ const Countries = () => {
                 placeholder="blurred"
                 className="country-image h-full w-full"
                 formats={["auto", "webp", "avif"]}
-                width={450}
-                height={450}
+                width={600}
+                height={600}
               />
               <div
                 className="relative place-items-center grid"
