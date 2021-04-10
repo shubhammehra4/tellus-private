@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react"
-import { Link, navigate } from "gatsby"
+import { navigate } from "gatsby"
 import SEO from "../components/seo"
 import { BsEyeFill, BsEyeSlashFill } from "react-icons/bs"
 import { useAuth } from "../context/Context"
-import "@fontsource/lato/400-italic.css"
+import "@fontsource/roboto"
 
 const IndexPage = () => {
   const password = useRef()
@@ -13,12 +13,11 @@ const IndexPage = () => {
 
   const handlePassword = e => {
     e.preventDefault()
-    if (password.current.value === "karndesigner") {
+    if (password.current.value === "voyager") {
       success.current.style.borderColor = "green"
       validateAuth(password.current.value)
-      console.log(process.env.PASSWORD)
       navigate(`/destination/`)
-    } else if (password.current.value.length > 12) {
+    } else if (password.current.value.length > 7) {
       success.current.style.borderColor = "red"
     } else {
       success.current.style.borderColor = "rgba(30,64,175,1)"
@@ -36,14 +35,14 @@ const IndexPage = () => {
     <>
       <SEO title="Home" />
       <section className="flex flex-col justify-center items-center w-screen h-screen">
-        <div className="lato-reg absolute top-3 flex justify-between w-screen px-6 text-gray-500 tracking-widest">
+        {/* <div className="lato-reg absolute top-3 flex justify-between w-screen px-6 text-gray-500 tracking-widest">
           <Link className="hover:underline focus:underline" to="/philosophy">
             PHILOSOPHY
           </Link>
           <Link className="hover:underline focus:underline" to="/story">
             STORY
           </Link>
-        </div>
+        </div> */}
         <h1 className="palanquin-bold c-name text-xl md:text-6xl">TELLUS</h1>
         <p
           className="palanquin-light c-status text-2xl sm:text-3xl md:text-8xl"
@@ -89,25 +88,12 @@ const IndexPage = () => {
             </button>
           </div>
         </form>
-        <footer className="absolute bottom-1 md:bottom-2 text-sm md:text-base text-center px-3 lato-reg tracking-wider">
-          &copy;Tellus Travel |{" "}
-          <address className="inline-block">
-            353 avenue de la Basilique, 1081 Brussels – Belgium
-          </address>{" "}
-          |{" "}
-          <a
-            className="text-blue-600 hover:underline focus:outline-none focus:underline focus:text-blue-800"
-            href="mailto:info@tellus.be"
-          >
-            info@tellus.be
-          </a>{" "}
-          |{" "}
-          <a
-            className="text-blue-600 hover:underline focus:outline-none focus:underline focus:text-blue-800"
-            href="tel:32 2 414 64 03"
-          >
-            +32 2 414 64 03
-          </a>
+        <footer
+          className="absolute bottom-1 md:bottom-2 text-sm md:text-base text-center px-3 tracking-widest text-gray-400 uppercase"
+          style={{ fontFamily: "Roboto" }}
+        >
+          &copy;Tellus Travel | 353 avenue de la Basilique, 1081 Brussels –
+          Belgium | info@tellus.be | +32 2 414 64 03
         </footer>
       </section>
     </>

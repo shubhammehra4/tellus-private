@@ -7,6 +7,7 @@
   "dependencies": {
     "@fontsource/lato": "^4.2.2",
     "@fontsource/palanquin": "^4.2.2",
+    "@fontsource/roboto": "^4.2.2",
     "framer-motion": "^4.0.3",
     "gatsby": "^3.0.1",
     "gatsby-plugin-gatsby-cloud": "^2.0.0",

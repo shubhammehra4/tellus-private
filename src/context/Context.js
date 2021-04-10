@@ -20,7 +20,7 @@ export function ContextProvider({ children }) {
   const [auth, setAuth] = useState(getLocalStorage)
 
   const validateAuth = password => {
-    if (password === "karndesigner") {
+    if (password === "voyager") {
       setLocalStorage()
       setAuth(true)
     }
