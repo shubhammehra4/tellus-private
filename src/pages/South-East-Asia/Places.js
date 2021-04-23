@@ -8,7 +8,7 @@ import PlaceBig from "../../components/PlaceBig"
 import { items } from "../../components/SEA/locations"
 
 export default function Places({ data }) {
-  const [selected, setSelected] = useState(null)
+  let [selected, setSelected] = useState(null)
 
   return (
     <>

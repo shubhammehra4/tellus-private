@@ -20,7 +20,7 @@ export default function PlaceList({
       }
       style={{ WebkitTapHighlightColor: "transparent" }}
       onClick={() => {
-        select({ id, name })
+        select(() => ({ id, name }))
       }}
     >
       <GatsbyImage

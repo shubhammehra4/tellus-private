@@ -43,9 +43,9 @@ const IndexPage = () => {
             STORY
           </Link>
         </div> */}
-        <h1 className="palanquin-bold c-name text-xl md:text-6xl">TELLUS</h1>
+        <h1 className="palanquin-bold c-name text-2xl md:text-6xl">TELLUS</h1>
         <p
-          className="palanquin-light c-status text-2xl sm:text-3xl md:text-8xl"
+          className="palanquin-light c-status text-3xl sm:text-3xl md:text-8xl"
           style={{ color: "rgba(0, 0, 0, 0.4)" }}
         >
           PRIVATE

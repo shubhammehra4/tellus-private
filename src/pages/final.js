@@ -47,7 +47,7 @@ function Final({ location }) {
   }
 
   if (!destination && typeof window !== "undefined") {
-    navigate("/countries")
+    navigate("/destination/")
   }
 
   return (

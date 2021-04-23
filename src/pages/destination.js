@@ -46,7 +46,7 @@ const Countries = () => {
                   gridArea: "1/1",
                 }}
               >
-                <h1 className="country-name palanquin-bold text-white text-4xl tracking-widest text-center">
+                <h1 className="country-name palanquin-bold text-white text-4xl lg:text-3xl xl:text-4xl tracking-widest text-center">
                   INDIAN SUBCONTINENT
                 </h1>
               </div>
@@ -69,7 +69,7 @@ const Countries = () => {
                   gridArea: "1/1",
                 }}
               >
-                <h1 className="country-name palanquin-bold text-white text-center text-4xl tracking-wider text-shadow">
+                <h1 className="country-name palanquin-bold text-white text-center text-4xl lg:text-3xl xl:text-4xl tracking-wider text-shadow">
                   SOUTH <span className="text-red-800">EAST ASIA</span>
                 </h1>
               </div>
@@ -92,7 +92,7 @@ const Countries = () => {
                   gridArea: "1/1",
                 }}
               >
-                <h1 className="country-name palanquin-bold text-4xl tracking-widest text-red-600">
+                <h1 className="country-name palanquin-bold text-4xl lg:text-3xl xl:text-4xl tracking-widest text-red-600">
                   CHINA
                 </h1>
               </div>
@@ -115,7 +115,7 @@ const Countries = () => {
                   gridArea: "1/1",
                 }}
               >
-                <h1 className="country-name palanquin-bold text-4xl tracking-widest text-white">
+                <h1 className="country-name palanquin-bold text-4xl lg:text-3xl xl:text-4xl tracking-widest text-white">
                   MONGOLIA
                 </h1>
               </div>

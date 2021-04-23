@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel"
 
-const Slide = ({ id, title, values, setState, state }) => (
+const Slide = ({ id, title, values, setState, state, next }) => (
   <>
     <section
       className="flex flex-col justify-evenly items-center"
@@ -28,7 +28,10 @@ const Slide = ({ id, title, values, setState, state }) => (
           return (
             <button
               key={i}
-              onClick={() => setState(prev => ({ ...prev, [id]: val }))}
+              onClick={() => {
+                setState(prev => ({ ...prev, [id]: val }))
+                next()
+              }}
               className="lato h-16 w-40 bg-gray-300 tracking-wider hover:bg-black hover:text-white transition-all duration-300 ease-out focus:outline-none"
             >
               {val}
@@ -102,6 +105,7 @@ function FinalSlides({ state, setState }) {
             values={ele.values}
             setState={setState}
             state={state}
+            next={next}
           />
         ))}
       </Carousel>

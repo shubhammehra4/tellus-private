@@ -94,6 +94,8 @@ input#password:not(:placeholder-shown) ~ label {
 
 .country-name {
   text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.2);
+  word-break: break-word;
+  text-align: center;
 }
 
 .text-shadow {

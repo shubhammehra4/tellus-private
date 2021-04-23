@@ -58,7 +58,7 @@ export default function SLIDE({
           <Link className="mt-4 md:mt-5" to={link} state={{ value }}>
             <button
               id="go"
-              className="lato px-8 md:px-10 py-2 md:py-3 bg-white font-bold text-sm md:text-base tracking-widest hover:bg-black hover:text-white transition duration-300 ease-in-out opacity-0"
+              className="lato px-8 md:px-10 py-2 md:py-3 bg-white font-bold text-sm md:text-base tracking-widest hover:bg-black hover:text-white transition duration-300 ease-in-out opacity-0 focus:outline-none"
             >
               GO
             </button>
