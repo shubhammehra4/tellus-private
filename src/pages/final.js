@@ -16,6 +16,7 @@ function Final({ location }) {
     activity: null,
     days: null,
   })
+  const [loading, setLoading] = useState(false)
   const [showModal, setShowModal] = useState(false)
   const [success, setSuccess] = useState(false)
   const email = useRef("")
@@ -30,7 +31,7 @@ function Final({ location }) {
     return re.test(email)
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const nameVal = name.current.value
     const emailVal = email.current.value
     email.current.style.borderColor = "rgba(156, 163, 175,1)"
@@ -47,8 +48,24 @@ function Final({ location }) {
       email.current.focus()
       return
     }
-    alert(JSON.stringify({ nameVal, emailVal, ...state, destination }, null, 4))
-    // setShowModal(false)
+    setLoading(true)
+    // const user = { name: nameVal, email: emailVal, ...state, destination }
+    const res = await fetch(
+      "https://sleepy-stream-89612.herokuapp.com/email/tellus",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: nameVal,
+          email: emailVal,
+          message: "Hello",
+        }),
+      }
+    )
+    console.log(res.json())
+    setLoading(false)
     setSuccess(true)
   }
 
@@ -153,9 +170,31 @@ function Final({ location }) {
                   </button>
                   <motion.button
                     layoutId="success"
-                    className="h-12 w-24 bg-gray-800 text-white focus:outline-none hover:bg-green-500 transition-all duration-500 ease-in-out"
+                    className="h-12 w-28 bg-gray-800 text-white focus:outline-none hover:bg-green-500 transition-all duration-500 ease-in-out flex justify-center items-center"
                     onClick={handleSubmit}
                   >
+                    {loading && (
+                      <svg
+                        className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          stroke-width="4"
+                        />
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                        />
+                      </svg>
+                    )}
                     CONFIRM
                   </motion.button>
                 </div>
