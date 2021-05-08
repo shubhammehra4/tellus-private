@@ -49,21 +49,25 @@ function Final({ location }) {
       return
     }
     setLoading(true)
-    // const user = { name: nameVal, email: emailVal, ...state, destination }
-    const res = await fetch(
-      "https://sleepy-stream-89612.herokuapp.com/email/tellus",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: nameVal,
-          email: emailVal,
-          message: "Hello",
-        }),
-      }
-    )
+    try {
+      var res = await fetch(
+        "https://mehra-email-api.herokuapp.com/email/tellus",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: nameVal,
+            email: emailVal,
+            message: "Hello",
+          }),
+        }
+      )
+    } catch (err) {
+      console.log(err)
+      return
+    }
     console.log(res.json())
     setLoading(false)
     setSuccess(true)
@@ -127,7 +131,7 @@ function Final({ location }) {
               >
                 <div className="relative flex justify-center items-center pb-4 md:pb-2 w-full">
                   <h1 className="palanquin-bold text-center text-4xl md:text-5xl text-gray-800 pt-6 pb-4">
-                    TELL US <span className="text-gray-400">YOUR</span>
+                    TELLUS <span className="text-gray-400">YOUR</span>
                   </h1>
                   <button
                     className="absolute top-0 right-3 z-50 focus:outline-none text-gray-600 hover:text-black"
@@ -186,7 +190,7 @@ function Final({ location }) {
                           cy="12"
                           r="10"
                           stroke="currentColor"
-                          stroke-width="4"
+                          strokeWidth="4"
                         />
                         <path
                           className="opacity-75"
@@ -224,7 +228,7 @@ function Final({ location }) {
                     Please Check Your Email
                   </motion.p>
                   <Link to="/destination/">
-                    <motion.button className="mt-6 px-4 py-2 bg-blue-600 hover:bg-blue-700 focus:outline-none text-white">
+                    <motion.button className="mt-6 px-4 py-2 bg-green-800 hover:bg-green-900 focus:outline-none text-white">
                       Home
                     </motion.button>
                   </Link>
