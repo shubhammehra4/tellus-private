@@ -1,0 +1,2 @@
+(self.webpackChunktellus_private=self.webpackChunktellus_private||[]).push([[158],{1725:function(t,e,n){"use strict";n.d(e,{nfZ:function(){return u}});var r=n(1046);function u(t){return(0,r.w_)({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{fill:"none",stroke:"#000",strokeWidth:"2",d:"M3,3 L21,21 M3,21 L21,3"}}]})(t)}}}]);
+//# sourceMappingURL=6728d85a-38479d50dbe4c3ef9b67.js.map
