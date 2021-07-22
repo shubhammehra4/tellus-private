@@ -27,7 +27,8 @@ function Final({ location }) {
   }
 
   const validateEmail = email => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    const re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     return re.test(email)
   }
 
@@ -50,20 +51,17 @@ function Final({ location }) {
     }
     setLoading(true)
     try {
-      var res = await fetch(
-        "https://mehra-email-api.herokuapp.com/email/tellus",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: nameVal,
-            email: emailVal,
-            message: "Hello",
-          }),
-        }
-      )
+      var res = await fetch("https://2lcrs6.deta.dev/email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: nameVal,
+          email: emailVal,
+          ...state,
+        }),
+      })
     } catch (err) {
       console.log(err)
       return
