@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react"
-import { navigate } from "gatsby"
+import { Link, navigate } from "gatsby"
 import SEO from "../components/seo"
 import { BsEyeFill, BsEyeSlashFill } from "react-icons/bs"
 import { useAuth } from "../context/Context"
@@ -35,14 +35,14 @@ const IndexPage = () => {
     <>
       <SEO title="Home" />
       <section className="flex flex-col justify-center items-center w-screen h-screen">
-        {/* <div className="lato-reg absolute top-3 flex justify-between w-screen px-6 text-gray-500 tracking-widest">
+        <div className="lato-reg absolute top-3 flex justify-between w-screen px-6 text-gray-500 tracking-widest">
           <Link className="hover:underline focus:underline" to="/philosophy">
             PHILOSOPHY
           </Link>
           <Link className="hover:underline focus:underline" to="/story">
             STORY
           </Link>
-        </div> */}
+        </div>
         <h1 className="palanquin-bold c-name text-2xl md:text-6xl">TELLUS</h1>
         <p
           className="palanquin-light c-status text-3xl sm:text-3xl md:text-8xl"

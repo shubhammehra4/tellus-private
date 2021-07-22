@@ -7,7 +7,7 @@ function Story() {
   return (
     <>
       <SEO title="OUR STORY" />
-      <section className="w-screen h-screen flex flex-col md:flex-row">
+      <section className="w-screen h-screen overflow-hidden flex flex-col md:flex-row">
         <StaticImage
           className="md:w-1/2"
           src="../images/story.jpg"

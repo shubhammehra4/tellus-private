@@ -7,7 +7,7 @@ function Philosophy() {
   return (
     <>
       <SEO title="OUR PHILOSOPHY" />
-      <section className="w-screen h-screen flex flex-col lg:flex-row">
+      <section className="w-screen h-screen overflow-hidden flex flex-col lg:flex-row">
         <StaticImage
           className="lg:w-1/2"
           src="../images/philosophy.jpg"
@@ -19,7 +19,7 @@ function Philosophy() {
           <h1 className="palanquin-bold text-4xl lg:text-6xl text-gray-800 tracking-widest mt-2 mb-6 md:mb-12">
             OUR PHILOSOPHY
           </h1>
-          <p className="lato-reg text-center md:w-3/5 text-base md:text-xl lg:text-2xl">
+          <p className="lato-reg text-center md:w-3/5 text-base md:text-xl lg:text-xl">
             Travel means discovery and new experiences. We strive for
             responsible tourism as defined in the 2002 Cape Town Declaration:
             <br />
